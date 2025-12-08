@@ -5,7 +5,7 @@ conect = sqlite3.connect("speeches.db")
 cursor = conect.cursor()
 
 # --------------------------
-# 1 - Criando Dataset
+# 1 - Criando Dataset 
 # --------------------------
 
 cursor.execute("DROP TABLE IF EXISTS speeches") # Verifica duplicata
@@ -1819,4 +1819,5 @@ VALUES
 conect.execute(Luiz_Inacio_Lula_da_Silva_3)
 
 conect.commit()
+
 conect.close()
