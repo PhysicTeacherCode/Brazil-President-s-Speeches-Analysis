@@ -1,19 +1,29 @@
-import sqlite3
+import os
+import psycopg2
+from dotenv import load_dotenv
 
-conect = sqlite3.connect("speeches.db")
+load_dotenv()  # carrega o .env
+
+conect = psycopg2.connect(
+    host=os.getenv("DB_HOST"),
+    port=os.getenv("DB_PORT"),
+    database=os.getenv("DB_NAME"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD")
+)
 
 cursor = conect.cursor()
 
 # --------------------------
-# 1 - Criando Dataset 
+# 1 - Criando Dataset (tabela)
 # --------------------------
 
-cursor.execute("DROP TABLE IF EXISTS speeches") # Verifica duplicata
+cursor.execute("DROP TABLE IF EXISTS speeches")
 
 criar_tabela = """
 CREATE TABLE speeches (
-    id INTEGER PRIMARY KEY,
-    presidente TEXT,
+    id SERIAL PRIMARY KEY,
+    presidente VARCHAR(200),
     n_par INTEGER,
     par TEXT
 );
@@ -1821,3 +1831,4 @@ conect.execute(Luiz_Inacio_Lula_da_Silva_3)
 conect.commit()
 
 conect.close()
+
