@@ -214,7 +214,7 @@ VALUES
 ('Rodrigues Alves', 30, 'Dirigindo aos meus concidadãos, neste dia memorável, cordiais saudações com as mais fundadas esperanças no futuro da pátria e cheio de confiança no patriotismo dos brasileiros, afirmo perante Deus que farei tudo quanto de mim depender para a firmeza as instituições e para a grandeza da República.') ;
 """
 
-conect.execute(Rodrigues_Alves)
+cursor.execute(Rodrigues_Alves)
 
 Affonso_Pena = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -294,7 +294,7 @@ VALUES
 ('Affonso Pena', 73, 'Governar dentro da Constituição e das leis, respeitar os direitos e legítimos interesses de todos, praticar a justiça, enfim, são normas que procurei observar sempre que me coube a tarefa de exercer qualquer parcela de poder publico, e das quais me afastarei no alto posto em que me colocou a confiança dos meus compatriotas.') ;
 """
 
-conect.execute(Affonso_Pena)
+cursor.execute(Affonso_Pena)
 
 Hermes_da_Fonseca = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -345,7 +345,7 @@ VALUES
 ('Hermes da Fonseca', 44, 'E, esforçando-me por promover o bem da pátria, terei cumprido o meu dever e tranquila a consciência.') ;
 """
 
-conect.execute(Hermes_da_Fonseca)
+cursor.execute(Hermes_da_Fonseca)
 
 Wenceslau_Bras = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -452,7 +452,7 @@ VALUES
 ('Wenceslau Brás', 100, 'Cumprirei meu dever. Confio em que todos cumpram o seu.') ;
 """
 
-conect.execute(Wenceslau_Bras)
+cursor.execute(Wenceslau_Bras)
 
 Epitacio_Pessoa = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -492,7 +492,7 @@ VALUES
 ('Epitácio Pessoa', 33, 'Tenho, pois, o direito de esperar que todos os meus concidadãos, a quem este assunto atinge, compreendam o sacrifício que acaso eu tenha de fazer sobre os meus sentimentos, para não faltar ao dever imposto pelas grandes responsabilidades do meu cargo. A questão não é só de querer, é também de poder, e eu não creio que haja um só coração de brasileiro, capaz de pôr o seu interesse próprio acima do interesse vital da nossa Pátria. O Congresso que apenas inicia o estudo da receita geral, examinará essas reclamações, o seu número, a extensão dos compromissos que elas criam para o Tesouro, a situação particular de cada classe ou dos seus membros e verá se é possível atendermos, e até que ponto, a interesses tão dignos de respeito, sem prejuízo das conveniências supremas do crédito público em que envolve a honra da Nação.') ;
 """
 
-conect.execute(Epitacio_Pessoa)
+cursor.execute(Epitacio_Pessoa)
 
 Arthur_Bernardes = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -504,7 +504,7 @@ VALUES
 ('Arthur Bernardes', 5, 'Com o pensamento assim invariavelmente voltado para os interesses reais e permanentes da paz, da civilização e da humanidade, e sempre numa estreita comunhão de espírito com todos os povos amigos do Brasil, ainda uma vez agradeço a grande honra do vosso comparecimento à minha posse, e significo, por vosso alto intermédio, a Sua Santidade o Papa Pio XI e aos Augustos Soberanos e Governos aqui tão dignamente representados, os votos ardentes que faço pela felicidade pessoal de cada um deles e pela prosperidade de suas respectivas Nações.');
 """
 
-conect.execute(Arthur_Bernardes)
+cursor.execute(Arthur_Bernardes)
 
 Washington_Luis = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -522,7 +522,7 @@ VALUES
 ('Washington Luís', 11, 'Muito penhorado me confesso, Senhor Embaixador, pelos termos expressivos de que Vossa Excelência se serviu, com relação ao Brasil e à minha pessoa. Faço, por minha vez, ardentes votos pela ventura de cada um dos Embaixadores especiais e dos Membros do Corpo Diplomático, e pela felicidade pessoal dos Soberanos e Chefes de Estado que representam, aos quais dirijo, como aos seus dignos representantes, as mais efusivas homenagens.');
 """
 
-conect.execute(Washington_Luis)
+cursor.execute(Washington_Luis)
 
 Getulio_Vargas_1 = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -533,7 +533,7 @@ VALUES
 ('Getúlio Vargas 1', 4, 'Realizamos, pois, um movimento eminentemente nacional.'),
 ('Getúlio Vargas 1', 5, 'Essa, a nossa maior satisfação, a nossa maior gloria e a base invulnerável sobre que assenta a confiança de que estamos possuídos para a efetivação dos superiores objetivos da revolução brasileira.'),
 ('Getúlio Vargas 1', 6, 'Quando, nesta cidade, as forças armadas e o povo depuseram o Governo Federal, o movimento regenerador já estava virtualmente triunfante em todo o país. A nação, em armas, acorria de todos os pontos do território nacional. No prazo de duas ou três semanas, as legiões do norte, do centro e do sul bateriam às portas da capital da República.'),
-('Getúlio Vargas 1', 7, "Não seria difícil prever o desfecho dessa marcha inevitável. A' aproximação das forças libertadoras, o povo do Rio de Janeiro, de cujos sentimentos revolucionários ninguém poderia duvidar, se levantaria em massa, para bater, no seu último reduto, a prepotência inativa e vacilante."),
+('Getúlio Vargas 1', 7, 'Não seria difícil prever o desfecho dessa marcha inevitável. A aproximação das forças libertadoras, o povo do Rio de Janeiro, de cujos sentimentos revolucionários ninguém poderia duvidar, se levantaria em massa, para bater, no seu último reduto, a prepotência inativa e vacilante.'),
 ('Getúlio Vargas 1', 8, 'Mas era bem possível que o governo, já em agonia, apegado às posições e teimando em manter uma autoridade inexistente de fato, tentasse sacrificar, nas chamas da luta fratricida, seus escassos e derradeiros amigos.'),
 ('Getúlio Vargas 1', 9, 'Compreendestes, senhores da Junta Governativa, a delicadeza da situação e com os vossos valorosos auxiliares desfechastes patrioticamente sobre o simulacro daquela autoridade claudicante o golpe de graça.'),
 ('Getúlio Vargas 1', 10, 'Os resultados benéficos dessa atitude constituem legitima credencial dos vossos sentimentos cívicos: integrastes definitivamente o restante das classes armadas na causa da revolução, poupastes à Pátria sacrifícios maiores de vidas e recursos materiais e resguardastes esta maravilhosa capital de danos incalculáveis.'),
@@ -554,7 +554,7 @@ VALUES
 ('Getúlio Vargas 1', 25, 'Assumo, provisoriamente, o governo da República, como delegado da revolução, em nome do Exército, da Marinha e do povo brasileiro, e agradeço os inesquecíveis serviços que prestastes à nação, com a vossa nobre e corajosa atitude, correspondendo, assim, aos altos destinos da Pátria.');
 """
 
-conect.execute(Getulio_Vargas_1)
+cursor.execute(Getulio_Vargas_1)
 
 Getulio_Vargas_2 = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -614,7 +614,7 @@ VALUES
 ('Getúlio Vargas 2', 53, 'Restauremos a Nação na sua autoridade e liberdade de ação: — na sua autoridade, dando-lhe os instrumentos de poder real e efetivo com que possa sobrepor-se às influências desagregadoras, internas ou externas; na sua liberdade, abrindo o plenário do julgamento nacional sobre os meios e os fins do Governo e deixando-a construir livremente a sua história e o seu destino.');
 """
 
-conect.execute(Getulio_Vargas_2)
+cursor.execute(Getulio_Vargas_2)
 
 Eurico_Gaspar_Dutra = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -634,7 +634,7 @@ VALUES
 ('Eurico Gaspar Dutra', 13, 'Com estes sentimentos é que recebo o Governo da República, Sr. Ministro José Linhares, disposto, como acentuei, a trabalhar na obra de continuidade que venha fortalecer a grandeza do País, correspondendo às aspirações reais da comunidade brasileira.');
 """
 
-conect.execute(Eurico_Gaspar_Dutra)
+cursor.execute(Eurico_Gaspar_Dutra)
 
 Getulio_Vargas_3 = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -652,7 +652,7 @@ VALUES
 ('Getúlio Vargas 3', 11, 'A jornada eleitoral foi encerrada e podeis estar orgulhosos da página de glória com que enriquecestes os anais da nossa vida política. Precisamos agora amortecer as paixões, esquecer os dissabores, aplacar os espíritos e apagar as cicatrizes da batalha. Temos diante de nós uma imensa tarefa de recuperação e consolidação a realizar e para ela, sem exclusões partidárias, convoco a boa vontade, a inteligência e o patriotismo dos brasileiros. Estou certo de vossa ajuda e conto com a vossa cooperação porque assim estaremos servindo não ao efêmero dum Governo, mas à perenidade, à perpetuidade e à grandeza da Nação brasileira.');
 """
 
-conect.execute(Getulio_Vargas_3)
+cursor.execute(Getulio_Vargas_3)
 
 Juscelino_Kubitschek = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -669,7 +669,7 @@ VALUES
 ('Juscelino Kubitschek', 10, 'Pedimos a Deus que nos inspire e nos dê o sentimento da grandeza de nossa missão.');
 """
 
-conect.execute(Juscelino_Kubitschek)
+cursor.execute(Juscelino_Kubitschek)
 
 Janio_Quadros = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -692,7 +692,7 @@ VALUES
 ('Jânio Quadros', 16, 'Dessa liberdade, faço a minha escravidão.');
 """
 
-conect.execute(Janio_Quadros)
+cursor.execute(Janio_Quadros)
 
 Joao_Goulart = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -710,7 +710,7 @@ VALUES
 ('João Goulart', 11, 'O destino, numa advertência significativa, conduziu-me à Presidência da República na data da independência política do Brasil. Vejo, na coincidência, um simbolismo que me há de inspirar e orientar na mais alta magistratura da Nação. Peço a Deus que me ampare, para que eu possa servir à nossa Pátria com todas as forças, com energia e sem temores, para que possa defender, como os nossos maiores souberam fazê-lo, a independência do Brasil, a grandeza nacional e a felicidade do povo brasileiro.');
 """
 
-conect.execute(Joao_Goulart)
+cursor.execute(Joao_Goulart)
 
 Marechal_Castelo_Branco = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -733,7 +733,7 @@ VALUES
 ('Marechal Castelo Branco', 16, 'Direi que a minha humildade de toda uma vida cresce neste instante: – nunca um só homem precisou tanto da compreensão, do apoio e da ajuda de todos os seus concidadãos. Venham a mim os brasileiros, e eu irei com eles para, com o auxílio de Deus, e com serena confiança, buscarmos melhores dias nos horizontes do futuro.');
 """
 
-conect.execute(Marechal_Castelo_Branco)
+cursor.execute(Marechal_Castelo_Branco)
 
 Marechal_Costa_e_Silva = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -746,7 +746,7 @@ VALUES
 ('Marechal Costa e Silva', 6, 'Trago, pois, para exercício da Presidência, uma larga lição de experiência — propiciada pela ação direta, pela observação e pela reflexão — do trato da coisa política, que requer paciência e tolerância contínuas, e do trato da coisa pública, que impõe esforço constante de inteligência, coragem e tenacidade. Acima de tudo, trago preparados espírito e coração. Confio em que não decairei, jamais, da confiança dos meus concidadãos e da rica herança que recebo das mãos honradas de Vossa Excelência. E peço a Deus que me conceda a graça de ser sempre justo e isento, firme na palavra empenhada e inflexível na ação necessária, e consagre a minha esperança de fazer pelo Brasil o que ele espera e merece.');
 """
 
-conect.execute(Marechal_Costa_e_Silva)
+cursor.execute(Marechal_Costa_e_Silva)
 
 General_Emilio_Garrastazu_Medici = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -795,7 +795,7 @@ VALUES
 ('General Emílio Garrastazu Médici', 42, 'E, com a ajuda de Deus e dos homens, haverei de pôr na mão do povo tudo aquilo em que mais creio.');
 """
 
-conect.execute(General_Emilio_Garrastazu_Medici)
+cursor.execute(General_Emilio_Garrastazu_Medici)
 
 General_Ernesto_Geisel = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -813,7 +813,7 @@ VALUES
 ('General Ernesto Geisel', 11, 'E que, entre governo e povo, na comunhão sempre renovada de confiança recíproca, construída na verdade e na franqueza, se forje a mais perfeita sintonia do sentir, do pensar e do querer, essencial à plena concretização de nossos alevantados ideais comuns de brasileiros.');
 """
 
-conect.execute(General_Ernesto_Geisel)
+cursor.execute(General_Ernesto_Geisel)
 
 General_Joao_Figueiredo = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -885,7 +885,7 @@ VALUES
 ('General João Figueiredo', 65, 'Muito obrigado.');
 """
 
-conect.execute(General_Joao_Figueiredo)
+cursor.execute(General_Joao_Figueiredo)
 
 Jose_Sarney = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -937,7 +937,7 @@ VALUES
 ('José Sarney', 45, 'E conclamo o povo brasileiro a continuar a prestar-nos seu apoio nessa difícil missão. Que cada cidadão oriente suas ações no sentido de atingirmos, na pá/ social e na concórdia, os altos objetivos que juntamente nos lixamos em praça pública, ao longo de nossa memorável campanha cívica pela democracia. Que cada grupo, cada entidade, cada representação política, ideológica ou profissional busque, a cada passo, aferir sua atitude pública pelos elevados padrões de comportamento político atingidos por nosso povo. Que cada brasileiro, enfim, dê o melhor de si no exercício da responsabilidade intransferível de, com seu esforço consciente, plasmar para si e para seus filhos o futuro deste País.');
 """
 
-conect.execute(Jose_Sarney)
+cursor.execute(Jose_Sarney)
 
 Fernando_Collor_de_Mello = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -1016,7 +1016,7 @@ VALUES
 ('Fernando Collor de Mello', 72, 'Ao fazê-lo, volto o pensamento para nossa bandeira, símbolo da Pátria. Nela vemos retratados a dimensão territorial, os recursos naturais, a multiplicidade de regiões e o apreço do povo brasileiro pelo progresso e pela paz. Meu compromisso na Presidência da República é realizar um Governo digno das melhores qualidades da nação, um Governo capaz de erguer o Brasil à altura do valor de sua gente, e do lugar que merece no concerto das nações.');
 """
 
-conect.execute(Fernando_Collor_de_Mello)
+cursor.execute(Fernando_Collor_de_Mello)
 
 Itamar_Franco = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -1041,7 +1041,7 @@ VALUES
 ('Itamar Franco', 18, 'Em nome do povo brasileiro, começamos a trabalhar. Muito obrigado.');
 """
 
-conect.execute(Itamar_Franco)
+cursor.execute(Itamar_Franco)
 
 
 Fernando_Henrique_Cardoso = """
@@ -1138,7 +1138,7 @@ VALUES
 ('Fernando Henrique Cardoso', 89, 'Muito obrigado.');
 """
 
-conect.execute(Fernando_Henrique_Cardoso)
+cursor.execute(Fernando_Henrique_Cardoso)
 
 Fernando_Henrique_Cardoso_2 = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -1219,7 +1219,7 @@ VALUES
 ('Fernando Henrique Cardoso 2', 74, 'Muito obrigado.');
 """
 
-conect.execute(Fernando_Henrique_Cardoso_2)
+cursor.execute(Fernando_Henrique_Cardoso_2)
 
 Luiz_Inacio_Lula_da_Silva_1 = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -1288,7 +1288,7 @@ VALUES
 ('Luiz Inácio Lula da Silva 1', 62, 'Viva o povo brasileiro!');
 """
 
-conect.execute(Luiz_Inacio_Lula_da_Silva_1)
+cursor.execute(Luiz_Inacio_Lula_da_Silva_1)
 
 Luiz_Inacio_Lula_da_Silva_2 = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -1399,7 +1399,7 @@ VALUES
 ('Luiz Inácio Lula da Silva 2', 104, 'Muito obrigado.');
 """
 
-conect.execute(Luiz_Inacio_Lula_da_Silva_2)
+cursor.execute(Luiz_Inacio_Lula_da_Silva_2)
 
 Dilma_Rousseff_1 = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -1526,7 +1526,7 @@ VALUES
 ('Dilma Rousseff 1', 120, 'Que Deus abençoe o Brasil! Que Deus abençoe a todos nós! E que tenhamos paz no mundo!');
 """
 
-conect.execute(Dilma_Rousseff_1)
+cursor.execute(Dilma_Rousseff_1)
 
 Dilma_Rousseff_2 = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -1627,7 +1627,7 @@ VALUES
 ('Dilma Rousseff 2', 94, 'Viva o Brasil e viva o povo brasileiro!');
 """
 
-conect.execute(Dilma_Rousseff_2)
+cursor.execute(Dilma_Rousseff_2)
 
 Michel_Temer = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -1677,7 +1677,7 @@ VALUES
 ('Michel Temer', 43, 'Meu muito obrigado e um bom Brasil para todos nós.');
 """
 
-conect.execute(Michel_Temer)
+cursor.execute(Michel_Temer)
 
 Jair_Bolsonaro = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -1740,7 +1740,7 @@ VALUES
 ('Jair Bolsonaro', 56, 'Deus acima de todos!');
 """
 
-conect.execute(Jair_Bolsonaro)
+cursor.execute(Jair_Bolsonaro)
 
 Luiz_Inacio_Lula_da_Silva_3 = """
 INSERT INTO speeches (presidente, n_par, par)
@@ -1826,7 +1826,7 @@ VALUES
 ('Luiz Inácio Lula da Silva 3', 79, 'Muito obrigado.');
 """
 
-conect.execute(Luiz_Inacio_Lula_da_Silva_3)
+cursor.execute(Luiz_Inacio_Lula_da_Silva_3)
 
 conect.commit()
 
