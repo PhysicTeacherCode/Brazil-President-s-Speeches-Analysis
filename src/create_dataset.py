@@ -31,6 +31,19 @@ CREATE TABLE speeches (
 
 cursor.execute(criar_tabela)
 
+cursor.execute("DROP TABLE IF EXISTS mandatos")
+
+criar_tabela = """
+CREATE TABLE mandatos (
+    id SERIAL PRIMARY KEY,
+    presidente VARCHAR(200),
+    inicio DATE,
+    fim DATE
+);
+"""
+
+cursor.execute(criar_tabela)
+
 # --------------------------
 # 2 - Adicionando discursos
 # --------------------------
@@ -1043,7 +1056,6 @@ VALUES
 
 cursor.execute(Itamar_Franco)
 
-
 Fernando_Henrique_Cardoso = """
 INSERT INTO speeches (presidente, n_par, par)
 VALUES
@@ -1828,7 +1840,60 @@ VALUES
 
 cursor.execute(Luiz_Inacio_Lula_da_Silva_3)
 
+# --------------------------
+# 3 - Adicionando mandatos
+# --------------------------
+
+mandatos = """
+INSERT INTO mandatos (presidente, inicio, fim)
+VALUES
+('Marechal Deodoro da Fonseca', '1889-11-15', '1891-11-23'),
+('Floriano Peixoto', '1891-11-23', '1894-11-15'),
+('Prudente de Moraes', '1894-11-15', '1898-11-15'),
+('Campos Sales', '1898-11-15', '1902-11-15'),
+('Rodrigues Alves', '1902-11-15', '1906-11-15'),
+('Affonso Pena', '1906-11-15', '1909-06-14'),
+('Nilo Peçanha', '1909-06-14', '1910-11-15'),
+('Hermes da Fonseca', '1910-11-15', '1914-11-15'),
+('Wenceslau Brás', '1914-11-15', '1918-11-15'),
+('Delfim Moreira', '1918-11-15', '1919-07-28'),
+('Epitácio Pessoa', '1919-07-28', '1922-11-15'),
+('Arthur Bernardes', '1922-11-15', '1926-11-15'),
+('Washington Luís', '1926-11-15', '1930-10-24'),
+('Getúlio Vargas 1', '1930-11-03', '1937-11-10'),
+('Getúlio Vargas 2', '1937-11-10', '1945-10-29'),
+('José Linhares', '1945-10-29', '1946-01-31'),
+('Eurico Gaspar Dutra', '1946-01-31', '1951-01-31'),
+('Getúlio Vargas 3', '1951-01-31', '1954-08-24'),
+('Café Filho', '1954-08-24', '1955-11-08'),
+('Carlos Luz', '1955-11-08', '1955-11-11'),
+('Nereu Ramos', '1955-11-11', '1956-01-31'),
+('Juscelino Kubitschek', '1956-01-31', '1961-01-31'),
+('Jânio Quadros', '1961-01-31', '1961-08-25'),
+('Ranieri Mazzilli 1', '1961-08-25', '1961-09-07'),
+('João Goulart', '1961-09-07', '1964-04-01'),
+('Ranieri Mazzilli 2', '1964-04-01', '1964-04-15'),
+('Marechal Castelo Branco', '1964-04-15', '1967-03-15'),
+('Marechal Costa e Silva', '1967-03-15', '1969-08-31'),
+('General Emílio Garrastazu Médici', '1969-10-31', '1974-03-15'),
+('General Ernesto Geisel', '1974-03-15', '1979-03-15'),
+('General João Figueiredo', '1979-03-15', '1985-03-15'),
+('José Sarney', '1985-03-15', '1990-03-15'),
+('Fernando Collor de Mello', '1990-03-15', '1992-12-29'),
+('Itamar Franco', '1992-12-29', '1995-01-01'),
+('Fernando Henrique Cardoso 1', '1995-01-01', '1999-01-01'),
+('Fernando Henrique Cardoso 2', '1999-01-01', '2003-01-01'),
+('Luiz Inácio Lula da Silva 1', '2003-01-01', '2007-01-01'),
+('Luiz Inácio Lula da Silva 2', '2007-01-01', '2011-01-01'),
+('Dilma Rousseff 1', '2011-01-01', '2015-08-31'),
+('Dilma Rousseff 2', '2015-01-01', '2016-08-31'),
+('Michel Temer', '2016-08-31', '2019-01-01'),
+('Jair Bolsonaro', '2019-01-01', '2023-01-01'),
+('Luiz Inácio Lula da Silva 3', '2023-01-01', '2026-12-31');
+"""
+
+cursor.execute(mandatos)
+
 conect.commit()
 
 conect.close()
-
